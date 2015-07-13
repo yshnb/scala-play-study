@@ -1,1 +1,1 @@
-GET /  controllers.Application.index:w
+GET /  controllers.Application.index
