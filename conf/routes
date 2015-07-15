@@ -1,1 +1,9 @@
 GET /  controllers.Application.index
+GET /get/:id controllers.Application.get(id: Int)
+GET /insert/:name/:price controllers.Application.insert(name: String, price: Int)
+GET /setup  controllers.Application.setup
+GET /hello controllers.Clients.hello
+GET /more controllers.Application.more
+GET /sess controllers.Application.sess
+GET /clients/:id controllers.Clients.show(id: Long)
+GET /files/*name controllers.Application.download(name)

@@ -1,0 +1,19 @@
+@import models.Item
+@(title: String)(items: List[Item])
+
+@display(item: Item) = {
+  @item.name (@item.price)
+}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>@title</title>
+	</head>
+	<body>
+		<h1>@title</h1>
+	@for(item <- items) {
+		@display(item)
+	}
+	</body>
+</html>
